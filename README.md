@@ -9,7 +9,7 @@ Welcome to the Flutter Word Game project! This is a simple word game where users
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
-- - [Resilience and Innovation Test](#ResilienceandInnovationTest)
+- [Resilience and Innovation Test](#ResilienceandInnovationTest)
 Resilience and Innovation Test:
 ## Features
 - Input a word and check its validity against a predefined list stored in Firebase.
