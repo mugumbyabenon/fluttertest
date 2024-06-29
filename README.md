@@ -53,7 +53,7 @@ Welcome to the Flutter Word Game project! This is a simple word game where users
 - The app reads the words stored on firebase collection called words and score you for each correct word .
 Each user can select a word only once to get points.
 
-![Words Screen](images/wordsfirestore.png)
+![Words Screen](images/wordsfirestore.PNG)
 *Words Collection Screen*
 ## Screenshots
 
