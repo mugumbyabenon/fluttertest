@@ -60,18 +60,58 @@ Welcome to the Flutter Word Game project! This is a simple word game where users
 
 ![sidebar Screen](images/sidebar.PNG)
 *sidebar Screen*
+
 - Enter a word in the input field and press the submit button to check its validity.
+
 - The app will display whether the word is valid or not and update the score accordingly.
+
 - The app reads the words stored on firebase collection called words and score you for each correct word .
 Each user can select a word only once to get points.
 
 ![Words Screen](images/wordsfirestore.PNG)
 *Words Collection Screen*
+
 - The app reads the scores stored on firebase collection called scores so that a user doesnot loose their score.
 
 
 ![Score collection Screen](images/scorecollection.PNG)
 *Score collection Screen*
+
+- The app has an Admin section where admins can perform CRUD(Create,Read,Update,Delete) functions.
+
+
+![adminpage Screen](images/adminpage.PNG)
+*adminpage Screen*
+
+- In the page above, we have a users list that is a stream of all the users registered on my app from the user collection. The admin user can make other users admin so that they can have admin rights to add new words to the game as shown
+
+
+![makeadmin Screen](images/makeadmin.PNG)
+*makeadmin Screen*
+- The user collection is as below
+
+
+![user Screen](images/usercollection.PNG)
+*user Screen*
+
+
+- The admin page also contains Words List section where we can view the words existing in the game with a delete button so as to delete the words. The delete button deletes words from the words firestore collection
+
+
+![wordlist  Screen](images/wordlist.PNG)
+*wordlist Screen*
+
+- The word collection is as below
+
+
+![wordscolle Screen](images/wordscolle.PNG)
+*wordscolle Screen*
+
+- The admin can also add new words to the words collection as seen below
+
+![addword Screen](images/addword.PNG)
+*addword*
+
 ## Screenshots
 
 Here are some screenshots of the UI design:
