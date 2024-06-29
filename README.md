@@ -52,6 +52,8 @@ Welcome to the Flutter Word Game project! This is a simple word game where users
 
 ![Login Screen](images/login.PNG)
 *Login Screen*
+
+
 - The app has a  signup page incase its your first install so that you can sign up
 
 ![Signup Screen](images/signup.PNG)
@@ -61,7 +63,10 @@ Welcome to the Flutter Word Game project! This is a simple word game where users
 ![sidebar Screen](images/sidebar.PNG)
 *sidebar Screen*
 
+
 - Enter a word in the input field and press the submit button to check its validity.
+
+
 
 - The app will display whether the word is valid or not and update the score accordingly.
 
@@ -112,20 +117,6 @@ Each user can select a word only once to get points.
 ![addword Screen](images/addword.PNG)
 *addword*
 
-## Screenshots
-
-Here are some screenshots of the UI design:
-
-![Home Screen](images/home_screen.png)
-*Home Screen*
-
-![Game Screen](images/game_screen.png)
-*Game Screen*
-
-To include images in your repository:
-1. Create an `images` directory in the root of your repository.
-2. Add your screenshots to this directory.
-3. Reference these images in your README file using markdown syntax as shown above.
 
 ## Contributing
 
