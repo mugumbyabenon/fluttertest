@@ -9,7 +9,8 @@ Welcome to the Flutter Word Game project! This is a simple word game where users
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
-
+- - [Resilience and Innovation Test](#ResilienceandInnovationTest)
+Resilience and Innovation Test:
 ## Features
 - Input a word and check its validity against a predefined list stored in Firebase.
 - Display a score based on the number of valid words.
@@ -116,7 +117,9 @@ Each user can select a word only once to get points.
 
 ![addword Screen](images/addword.PNG)
 *addword*
+## ResilienceandInnovationTest:
 
+Within the code, we employed try and catch blocks for all functions that are performing and  processing.We then created a logErrorToFirestore function located in the components folder. For every error we created a firestore collection to log the error name, time and user on which it happened. With this setup we can ensure that we log all crush errors or any other errors in order to get realtime updates from user usage
 
 ## Contributing
 
