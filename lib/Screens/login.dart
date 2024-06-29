@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test1/Screens/Home.dart';
 import 'package:flutter_test1/Screens/RegisterPage.dart';
+import 'package:flutter_test1/components/errorOnlineLog.dart';
 import 'package:flutter_test1/components/mybutton.dart';
 import 'package:flutter_test1/components/tetxfield.dart';
 
@@ -49,6 +50,7 @@ class _LoginPageState extends State<LoginPage> {
       }
     } catch (error) {
       debugPrint(error.toString());
+      logErrorToFirestore(error.toString());
     } finally {
       setState(() {
         isLoading = false;

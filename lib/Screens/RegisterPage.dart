@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test1/Screens/login.dart';
+import 'package:flutter_test1/components/errorOnlineLog.dart';
 import 'package:flutter_test1/components/mybutton.dart';
 import 'package:flutter_test1/components/tetxfield.dart';
 
@@ -28,14 +29,7 @@ class _RegisterPageState extends State<RegisterPage> {
               email: emailController.text, password: passwordController.text);
       final user = await FirebaseAuth.instance.currentUser;
       await user!.updateDisplayName(nameController.text);
-      bool retailer = false;
-      if (selected == 'Retailer') {
-        retailer = true;
       
-      } else {
-        retailer = false;
-    
-      }
       //after creating the user, create a new document in cloud firestore called users
       FirebaseFirestore.instance
           .collection("Users")
@@ -44,7 +38,7 @@ class _RegisterPageState extends State<RegisterPage> {
         'username': nameController.text,
         'phonenumber': phoneController.text,
         'email': emailController.text,
-   
+        'admin':false,
         'uid': userCredential.user!.uid,
       });
      
@@ -68,6 +62,7 @@ class _RegisterPageState extends State<RegisterPage> {
       // Regular Dart exceptions
       print('Regular Exception: $e');
     }
+    logErrorToFirestore(e.toString());
       }
     
     } else {

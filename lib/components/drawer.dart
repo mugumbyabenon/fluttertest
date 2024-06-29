@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_test1/Screens/AdminPage.dart';
+import 'package:flutter_test1/Screens/Home.dart';
 import 'package:flutter_test1/Screens/RegisterPage.dart';
 import 'package:flutter_test1/Screens/login.dart';
 
@@ -28,13 +30,25 @@ class _AppDrawerState extends State<AppDrawer> {
               onTap: () {
                 // Navigate to home screen
                 Navigator.pop(context);
+                   Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => HomeScreen(),
+                                ),
+                              );
               },
             ),
             ListTile(
-              title: Text('Feature 1'),
+              title: Text('Admin'),
               onTap: () {
                 // Navigate to feature 1
                 Navigator.pop(context);
+                 Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ItemsListScreen(),
+                                ),
+                              );
               },
             ),
             ListTile(
