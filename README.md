@@ -26,7 +26,7 @@ Welcome to the Flutter Word Game project! This is a simple word game where users
 ### Setup
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
+    git clone https://github.com/mugumbyabenon/fluttertest.git
     ```
 
 2. **Navigate to the project directory:**
@@ -39,13 +39,8 @@ Welcome to the Flutter Word Game project! This is a simple word game where users
     flutter pub get
     ```
 
-4. **Set up Firebase:**
-    - Follow the instructions [here](https://firebase.flutter.dev/docs/overview) to configure Firebase for your Flutter app.
-    - Download the `google-services.json` for Android or `GoogleService-Info.plist` for iOS and place it in the appropriate directory:
-      - Android: `android/app/`
-      - iOS: `ios/Runner/`
 
-5. **Run the app:**
+4. **Run the app:**
     ```bash
     flutter run
     ```
