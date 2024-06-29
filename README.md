@@ -1,16 +1,80 @@
-# flutter_test1
+# Flutter Word Game
 
-A new Flutter project.
+Welcome to the Flutter Word Game project! This is a simple word game where users can input a word, check its validity, and receive feedback. The app also integrates with Firebase to manage word lists and display scores.
 
-## Getting Started
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
 
-This project is a starting point for a Flutter application.
+## Features
+- Input a word and check its validity against a predefined list stored in Firebase.
+- Display a score based on the number of valid words.
+- Provide feedback for correct and incorrect words.
+- Use StreamBuilder to display a list of items from Firebase with titles.
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Prerequisites
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- Dart SDK: Dart is included with Flutter
+- Firebase account: [Create a Firebase project](https://console.firebase.google.com/)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Setup
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/your-repo-name.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```bash
+    cd your-repo-name
+    ```
+
+3. **Install dependencies:**
+    ```bash
+    flutter pub get
+    ```
+
+4. **Set up Firebase:**
+    - Follow the instructions [here](https://firebase.flutter.dev/docs/overview) to configure Firebase for your Flutter app.
+    - Download the `google-services.json` for Android or `GoogleService-Info.plist` for iOS and place it in the appropriate directory:
+      - Android: `android/app/`
+      - iOS: `ios/Runner/`
+
+5. **Run the app:**
+    ```bash
+    flutter run
+    ```
+
+## Usage
+
+- Launch the app on your device/emulator.
+- Enter a word in the input field and press the submit button to check its validity.
+- The app will display whether the word is valid or not and update the score accordingly.
+
+## Screenshots
+
+Here are some screenshots of the UI design:
+
+![Home Screen](images/home_screen.png)
+*Home Screen*
+
+![Game Screen](images/game_screen.png)
+*Game Screen*
+
+To include images in your repository:
+1. Create an `images` directory in the root of your repository.
+2. Add your screenshots to this directory.
+3. Reference these images in your README file using markdown syntax as shown above.
+
+## Contributing
+
+Feel free to fork the repository, create a branch, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
