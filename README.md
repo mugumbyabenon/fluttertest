@@ -48,6 +48,18 @@ Welcome to the Flutter Word Game project! This is a simple word game where users
 ## Usage
 
 - Launch the app on your device/emulator.
+- The app starts with a login page incase its your first install or your are logged out 
+
+![Login Screen](images/login.PNG)
+*Login Screen*
+- The app has a  signup page incase its your first install so that you can sign up
+
+![Signup Screen](images/signup.PNG)
+*SignUp Screen*
+-The app has the game screen below as the landing page and the app bar for app navigation is as below
+
+![sidebar Screen](images/sidebar.PNG)
+*sidebar Screen*
 - Enter a word in the input field and press the submit button to check its validity.
 - The app will display whether the word is valid or not and update the score accordingly.
 - The app reads the words stored on firebase collection called words and score you for each correct word .
@@ -55,6 +67,11 @@ Each user can select a word only once to get points.
 
 ![Words Screen](images/wordsfirestore.PNG)
 *Words Collection Screen*
+- The app reads the scores stored on firebase collection called scores so that a user doesnot loose their score.
+
+
+![Score collection Screen](images/scorecollection.PNG)
+*Score collection Screen*
 ## Screenshots
 
 Here are some screenshots of the UI design:
